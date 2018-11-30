@@ -1,14 +1,14 @@
 $(call inherit-product, device/lge/h930/full_h930.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/invictrix/config/common_full_phone.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_NAME := invictrix_h930
+PRODUCT_NAME := havoc_h930
 
-INVICTRIX_MAINTAINER := me2151
+INVICTRIX_MAINTAINER := scissordragonboy
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="joan" \
